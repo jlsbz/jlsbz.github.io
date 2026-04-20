@@ -23,7 +23,7 @@ repository               : "jlsbz/jlsbz.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "touxiang.png"
+  avatar           : "touxiang.jpg"
   name             : "Ning Yang"
   pronouns         : # example: "she/her"  
   bio              : "PhD student @ IMPACT Lab, School of Computer Science, Shanghai Jiao Tong University"
