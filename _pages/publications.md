@@ -290,6 +290,9 @@ author_profile: true
     color: var(--pub-text);
     white-space: nowrap;
   }
+  .stat-num-dark {
+  color: var(--pub-strong);
+  }
 
   .stat-sub {
     font-size: 10px;
@@ -326,10 +329,10 @@ author_profile: true
 </style>
 
 <div class="stats-final-row">
-  <div class="stat-unit"><span class="stat-num" style="color:#222;">29</span><span class="stat-text">Total Pubs</span><span class="stat-sub">Google Scholar</span></div>
+  <div class="stat-unit"><span class="stat-num stat-num-dark">29</span><span class="stat-text">Total Pubs</span><span class="stat-sub">Google Scholar</span></div>
   <div class="stat-unit"><span class="stat-num">18+</span><span class="stat-text">CCF-A/B</span><span class="stat-sub">Arch/EDA/Systems</span></div>
-  <div class="stat-unit"><span class="stat-num">12+</span><span class="stat-text">Top Conf</span><span class="stat-sub">DAC/HPCA/MICRO/ISCA</span></div>
-  <div class="stat-unit"><span class="stat-num">7+</span><span class="stat-text">Journals</span><span class="stat-sub">TACO/TPDS/TCAD/TODAES</span></div>
+  <div class="stat-unit"><span class="stat-num">12+</span><span class="stat-text">Top Conf</span><span class="stat-sub">DAC/HPCA/MICRO/ISCA/ASPLOS</span></div>
+  <div class="stat-unit"><span class="stat-num">7+</span><span class="stat-text">Journals</span><span class="stat-sub">TACO/TPDS/TCAD</span></div>
 </div>
 
 <div class="pub-container">
