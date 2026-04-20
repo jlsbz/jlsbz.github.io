@@ -313,6 +313,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-scholar
 
 # Mimic GitHub Pages with --safe
 whitelist:
@@ -322,7 +323,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
-
+  - jekyll-scholar
 
 # Archives
 #  Type
@@ -359,3 +360,24 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+scholar:
+  style: apa
+  locale: en
+
+  source: ./_bibliography
+  bibliography: papers.bib
+
+  bibliography_template: bib
+
+  sort_by: year,month
+  order: descending
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_link: Details
+
+  query: "@*"
