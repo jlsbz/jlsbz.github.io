@@ -98,7 +98,7 @@ author_profile: true
 
 <div class="pub-container">
   <div class="pub-legend">
-    <span><b>{=}</b> Equal contribution &nbsp;&nbsp; <b>{*}</b> Corresponding author</span>
+    <span><b>{=}</b> Equal contribution</span>
     <a href="https://scholar.google.com/citations?user=ch7g9rkAAAAJ" style="color: #1a73e8; font-weight: bold; text-decoration: none;">[Google Scholar Profile]</a>
   </div>
 
@@ -108,9 +108,9 @@ author_profile: true
 <div class="pub-item">
   <span class="pub-venue">[ISCA '26]</span>
   <div class="pub-content">
-    <a href="#" class="pub-title">STEP: Adaptive Spatio-Temporal Expert Prefetching for Low-Latency and Memory-Efficient MoE Inference *(Accepted!)*</a>
+    <a href="#" class="pub-title">STEP: Adaptive Spatio-Temporal Expert Prefetching for Low-Latency and Memory-Efficient MoE Inference (Accepted!)</a>
     <span class="tag-italic">(CCF-A Conf)</span><span class="tag tag-ccf">CCF-A</span>
-    <div class="pub-authors">Fangxin Liu, <b>Ning Yang</b>, Zongwu Wang, Chenyang Guan, Haomin Li, Yu Feng, Liqiang Lu, Xiang Li, Siran Yang, Jiamang Wang, Lin Qu, Li Jiang, Haibing Guan</div>
+    <div class="pub-authors">Fangxin Liu=, <b>Ning Yang=</b>, Zongwu Wang, Chenyang Guan, Haomin Li, Yu Feng, Liqiang Lu, Xiang Li, Siran Yang, Jiamang Wang, Lin Qu, Li Jiang, Haibing Guan</div>
   </div>
     <div class="pub-links">
       <a href="#" class="link-btn">[Paper]</a>
@@ -149,7 +149,7 @@ author_profile: true
   <div class="pub-content">
     <a href="#" class="pub-title">EARTH: An Efficient MoE Accelerator with Entropy-Aware Speculative Prefetch and Result Reuse</a>
     <span class="tag-italic">(CCF-A Conf)</span><span class="tag tag-ccf">CCF-A</span>
-    <div class="pub-authors">Fangxin Liu, <b>Ning Yang</b>, Jingkui Yang, Zongwu Wang, Chenyang Guan, Yu Feng, Li Jiang, Haibing Guan</div>
+    <div class="pub-authors">Fangxin Liu=, <b>Ning Yang=</b>, Jingkui Yang, Zongwu Wang, Chenyang Guan, Yu Feng, Li Jiang, Haibing Guan</div>
     <!-- <div class="pub-links">
       <a href="#" class="link-btn">[Paper]</a>
       <a href="#" class="link-btn">[Code]</a>
@@ -180,7 +180,7 @@ author_profile: true
   <div class="pub-content">
     <a href="#" class="pub-title">BLOOM: Bit-Slice Framework for DNN Acceleration with Mixed-Precision</a>
     <span class="tag-italic">(CCF-A Conf)</span><span class="tag tag-ccf">CCF-A</span>
-    <div class="pub-authors">Fangxin Liu, <b>Ning Yang</b>, Zongwu Wang, Xuanpeng Zhu, Haidong Yao, Xiankui Xiong, Li Jiang, Haibing Guan</div>
+    <div class="pub-authors">Fangxin Liu=, <b>Ning Yang=</b>, Zongwu Wang, Xuanpeng Zhu, Haidong Yao, Xiankui Xiong, Li Jiang, Haibing Guan</div>
     <!-- <div class="pub-links">
       <a href="#" class="link-btn">[Paper]</a>
       <a href="#" class="link-btn">[Code]</a>
@@ -222,7 +222,7 @@ author_profile: true
   <div class="pub-content">
     <a href="#" class="pub-title">Ops: Outlier-aware precision-slice framework for llm acceleration</a>
     <span class="tag-italic">(CCF-B Conf)</span><span class="tag tag-ccf">CCF-B</span>
-    <div class="pub-authors">Fangxin Liu, <b>Ning Yang</b>, Zongwu Wang, Xuanpeng Zhu, Haidong Yao, Xiankui Xiong, Qi Sun, Li Jiang</div>
+    <div class="pub-authors">Fangxin Liu=, <b>Ning Yang=</b>, Zongwu Wang, Xuanpeng Zhu, Haidong Yao, Xiankui Xiong, Qi Sun, Li Jiang</div>
     <!-- <div class="pub-links">
       <a href="#" class="link-btn">[Paper]</a>
       <a href="#" class="link-btn">[Code]</a>
@@ -280,7 +280,7 @@ author_profile: true
   <div class="pub-content">
     <a href="#" class="pub-title">EOS: An Energy-Oriented Attack Framework for Spiking Neural Networks</a>
     <span class="tag-italic">(CCF-A Conf)</span><span class="tag tag-ccf">CCF-A</span>
-    <div class="pub-authors"><b>Ning Yang</b>, Fangxin Liu, Zongwu Wang, Haomin Li, Zhuoran Song, Songwen Pei, Li Jiang</div>
+    <div class="pub-authors"><b>Ning Yang=</b>, Fangxin Liu=, Zongwu Wang, Haomin Li, Zhuoran Song, Songwen Pei, Li Jiang</div>
     <!-- <div class="pub-links">
       <a href="#" class="link-btn">[Paper]</a>
       <a href="#" class="link-btn">[Code]</a>
@@ -294,7 +294,7 @@ author_profile: true
   <div class="pub-content">
     <a href="#" class="pub-title">Inspire: Accelerating deep neural networks via hardware-friendly index-pair encoding</a>
     <span class="tag-italic">(CCF-A Conf)</span><span class="tag tag-ccf">CCF-A</span>
-    <div class="pub-authors">Fangxin Liu, <b>Ning Yang</b>, Zhiyan Song, Zongwu Wang, Haomin Li, Shiyuan Huang, Zhuoran Song, Songwen Pei, Li Jiang</div>
+    <div class="pub-authors">Fangxin Liu=, <b>Ning Yang=</b>, Zhiyan Song, Zongwu Wang, Haomin Li, Shiyuan Huang, Zhuoran Song, Songwen Pei, Li Jiang</div>
     <!-- <div class="pub-links">
       <a href="#" class="link-btn">[Paper]</a>
       <a href="#" class="link-btn">[Code]</a>
@@ -308,7 +308,7 @@ author_profile: true
   <div class="pub-content">
     <a href="#" class="pub-title">Spark: Scalable and precision-aware acceleration of neural networks via efficient encoding</a>
     <span class="tag-italic">(CCF-A Conf)</span><span class="tag tag-ccf">CCF-A</span>
-    <div class="pub-authors">Fangxin Liu, <b>Ning Yang</b>, Haomin Li, Zongwu Wang, Zhuoran Song, Songwen Pei, Li Jiang</div>
+    <div class="pub-authors">Fangxin Liu=, <b>Ning Yang=</b>, Haomin Li, Zongwu Wang, Zhuoran Song, Songwen Pei, Li Jiang</div>
     <!-- <div class="pub-links">
       <a href="#" class="link-btn">[Paper]</a>
       <a href="#" class="link-btn">[Code]</a>
@@ -322,7 +322,7 @@ author_profile: true
   <div class="pub-content">
     <a href="#" class="pub-title">T-BUS: Taming bipartite unstructured sparsity for energy-efficient DNN acceleration</a>
     <span class="tag-italic">(CCF-B Conf)</span><span class="tag tag-ccf">CCF-B</span>
-    <div class="pub-authors"><b>Ning Yang</b>, Fangxin Liu, Zongwu Wang, Zhiyan Song, Tao Yang, Li Jiang</div>
+    <div class="pub-authors"><b>Ning Yang=</b>, Fangxin Liu=, Zongwu Wang, Zhiyan Song, Tao Yang, Li Jiang</div>
     <!-- <div class="pub-links">
       <a href="#" class="link-btn">[Paper]</a>
       <a href="#" class="link-btn">[Code]</a>
@@ -336,7 +336,7 @@ author_profile: true
   <div class="pub-content">
     <a href="#" class="pub-title">Holes: Boosting large language models efficiency with hardware-friendly lossless encoding</a>
     <span class="tag-italic">(CCF-B Conf)</span><span class="tag tag-ccf">CCF-B</span>
-    <div class="pub-authors">Fangxin Liu, <b>Ning Yang</b>, Zhiyan Song, Zongwu Wang, Li Jiang</div>
+    <div class="pub-authors">Fangxin Liu=, <b>Ning Yang=</b>, Zhiyan Song, Zongwu Wang, Li Jiang</div>
     <!-- <div class="pub-links">
       <a href="#" class="link-btn">[Paper]</a>
       <a href="#" class="link-btn">[Code]</a>
