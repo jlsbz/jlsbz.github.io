@@ -7,21 +7,21 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student at Shanghai Jiao Tong University, working on efficient systems for large language models (LLMs).
+I am a fifth-year Ph.D. student in Computer Science at Shanghai Jiao Tong University, Intelligent Memory & Processor Architecture & Computing Lab (IMPACT Lab), where I am very fortunate to be advised by Prof. Li Jiang and Assist Prof. Fangxin Liu.
+
+I received my Bachelor's degree from the ACM Honors Class at Shanghai Jiao Tong University, where I worked under the supervision of Prof. Weinan Zhang and Prof. Yong Yu.
 
 My research focuses on the intersection of **systems, machine learning, and hardware-aware optimization**, including:
 
 - Efficient LLM inference and serving
 - Mixture-of-Experts (MoE) systems
 - Model compression and quantization
-- Mobile and bandwidth-constrained deployment
 
 I am particularly interested in **co-designing algorithms and systems** to reduce memory movement and improve real-world performance.
 
 ---
 
 ## 🔥 Selected Publications
-
 
 
 - **STEP**: System-aware expert prefetching for MoE inference  
