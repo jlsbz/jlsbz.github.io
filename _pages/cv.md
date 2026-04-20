@@ -10,14 +10,94 @@ redirect_from:
 {% include base_path %}
 
 <style>
-  .cv-section { margin-bottom: 35px; }
-  .cv-title { font-size: 22px; font-weight: bold; border-bottom: 2px solid #538F79; padding-bottom: 6px; margin-bottom: 15px; color: #222; }
-  .cv-item { margin-bottom: 12px; line-height: 1.6; }
-  .cv-label { font-weight: bold; min-width: 110px; display: inline-block; color: #333; }
-  .pub-entry { margin-bottom: 10px; line-height: 1.5; }
-  .pub-title { font-weight: 600; }
-  .pub-me { color: #000; font-weight: bold; border-bottom: 1.5px solid #333; }
-  .pub-conf { color: #006699; font-weight: 500; }
+  :root {
+    --cv-text: #333;
+    --cv-heading: #222;
+    --cv-strong: #000;
+    --cv-label: #333;
+    --cv-accent: #538F79;
+    --cv-link: #006699;
+    --cv-border: #333;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cv-text: #e6e6e6;
+      --cv-heading: #f3f3f3;
+      --cv-strong: #ffffff;
+      --cv-label: #d8d8d8;
+      --cv-accent: #7fc7ab;
+      --cv-link: #7db7ff;
+      --cv-border: #bfbfbf;
+    }
+  }
+
+  html.dark,
+  body.dark,
+  body.dark-mode,
+  html[data-theme="dark"],
+  body[data-theme="dark"] {
+    --cv-text: #e6e6e6;
+    --cv-heading: #f3f3f3;
+    --cv-strong: #ffffff;
+    --cv-label: #d8d8d8;
+    --cv-accent: #7fc7ab;
+    --cv-link: #7db7ff;
+    --cv-border: #bfbfbf;
+  }
+
+  .cv-section {
+    margin-bottom: 35px;
+    color: var(--cv-text);
+  }
+
+  .cv-title {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid var(--cv-accent);
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    color: var(--cv-heading);
+  }
+
+  .cv-item {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: var(--cv-text);
+  }
+
+  .cv-label {
+    font-weight: bold;
+    min-width: 110px;
+    display: inline-block;
+    color: var(--cv-label);
+  }
+
+  .pub-entry {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: var(--cv-text);
+  }
+
+  .pub-title {
+    font-weight: 600;
+    color: var(--cv-heading);
+  }
+
+  .pub-me {
+    color: var(--cv-strong);
+    font-weight: bold;
+    border-bottom: 1.5px solid var(--cv-border);
+  }
+
+  .pub-conf {
+    color: var(--cv-link);
+    font-weight: 500;
+  }
+
+  .cv-section a {
+    color: var(--cv-link);
+  }
 </style>
 
 <div class="cv-section">
