@@ -23,11 +23,11 @@ repository               : "jlsbz/jlsbz.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "touxiang.png"
   name             : "Ning Yang"
   pronouns         : # example: "she/her"  
   bio              : "PhD student @ IMPACT Lab, School of Computer Science, Shanghai Jiao Tong University"
-  location         : "800 DongChuan Road,\nSEIEE Building #03-125,\nMinhang District, Shanghai, China"
+  location         : "Shanghai, China"
   employer         : "Shanghai Jiao Tong University"
   uri              : # URL
   email            : "yn937391832@sjtu.edu.cn" 
@@ -35,7 +35,7 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?hl=zh-TW&user=ch7g9rkAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=ch7g9rkAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0004-6964-8910"
