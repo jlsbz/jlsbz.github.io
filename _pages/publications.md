@@ -5,83 +5,319 @@ permalink: /publications/
 author_profile: true
 ---
 <style>
-  .pub-container { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 100%; color: #333; }
-  .pub-legend { font-size: 13px; color: #666; margin-bottom: 25px; padding: 12px 15px; background: #fbfbfb; border-left: 5px solid #538F79; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
-  .year-header { border-bottom: 2px solid #538F79; font-size: 22px; font-weight: bold; margin: 45px 0 20px 0; color: #222; }
-  
-  .pub-item { margin-bottom: 25px; display: flex; flex-direction: row; align-items: flex-start; line-height: 1.5; }
-  .pub-venue { font-weight: 800; min-width: 115px; flex-shrink: 0; color: #111; font-size: 14.5px; padding-top: 2px; }
-  .pub-content { flex-grow: 1; }
-  .pub-title { font-weight: 700; color: #111; text-decoration: none; font-size: 16px; display: inline; transition: 0.2s; }
-  .pub-title:hover { color: #538F79; border-bottom: 1px solid #538F79; }
-  .pub-authors { font-size: 14px; color: #555; margin-top: 5px; }
-  .pub-authors b { color: #000; text-decoration: none; border-bottom: 1.5px solid #333; }
-  .pub-links { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; }
-  .link-btn { font-size: 12px; font-weight: 600; color: #538F79; text-decoration: none; padding: 2px 8px; border: 1px solid #538F79; border-radius: 4px; transition: 0.2s; }
-  .link-btn:hover { background: #538F79; color: #fff; }
-  .tag { font-size: 11px; padding: 1px 6px; border-radius: 4px; font-weight: 600; display: inline-block; margin-left: 4px; vertical-align: middle; }
-  .tag-ccf { color: #1a73e8; background: #eef6ff; border: 1px solid #d0e7ff; }
-  .tag-acc { color: #52c41a; background: #f6ffed; border: 1px solid #b7eb8f; }
-  .tag-award { color: #d48806; background: #fffbe6; border: 1px solid #ffe58f; }
-  .tag-industry { color: #cf1322; background: #fff1f0; border: 1px solid #ffa39e; }
-  .tag-italic { font-size: 11px; color: #777; font-style: italic; margin-left: 4px; }
-  @media (max-width: 768px) {
-    .pub-item { flex-direction: column; }
-    .pub-venue { margin-bottom: 6px; font-size: 13px; background: #eee; padding: 1px 8px; border-radius: 4px; min-width: auto; }
-    .pub-title { font-size: 15px; }
-    .pub-authors { font-size: 13px; }
-    .pub-links { gap: 5px; }
-    .link-btn { padding: 1px 6px; font-size: 11px; }
+  :root {
+    --pub-text: #333;
+    --pub-text-soft: #555;
+    --pub-text-muted: #666;
+    --pub-heading: #222;
+    --pub-strong: #111;
+    --pub-bold: #000;
+
+    --pub-bg-soft: #fbfbfb;
+    --pub-bg-card: #fdfdfd;
+    --pub-border: #efefef;
+    --pub-border-soft: #eee;
+
+    --pub-accent: #538F79;
+    --pub-link-blue: #1a73e8;
+
+    --tag-ccf-text: #1a73e8;
+    --tag-ccf-bg: #eef6ff;
+    --tag-ccf-border: #d0e7ff;
+
+    --tag-acc-text: #52c41a;
+    --tag-acc-bg: #f6ffed;
+    --tag-acc-border: #b7eb8f;
+
+    --tag-award-text: #d48806;
+    --tag-award-bg: #fffbe6;
+    --tag-award-border: #ffe58f;
+
+    --tag-industry-text: #cf1322;
+    --tag-industry-bg: #fff1f0;
+    --tag-industry-border: #ffa39e;
   }
+
+  /* 自动跟随系统深色模式 */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --pub-text: #e6e6e6;
+      --pub-text-soft: #cfcfcf;
+      --pub-text-muted: #b5b5b5;
+      --pub-heading: #f3f3f3;
+      --pub-strong: #ffffff;
+      --pub-bold: #ffffff;
+
+      --pub-bg-soft: #1f2227;
+      --pub-bg-card: #181b20;
+      --pub-border: #31363f;
+      --pub-border-soft: #2a2f37;
+
+      --pub-accent: #7fc7ab;
+      --pub-link-blue: #7db7ff;
+
+      --tag-ccf-text: #9dc8ff;
+      --tag-ccf-bg: #1b2738;
+      --tag-ccf-border: #35506f;
+
+      --tag-acc-text: #9be28a;
+      --tag-acc-bg: #1c2b1d;
+      --tag-acc-border: #3f6b42;
+
+      --tag-award-text: #ffd27a;
+      --tag-award-bg: #302710;
+      --tag-award-border: #6d5a1f;
+
+      --tag-industry-text: #ff9b9b;
+      --tag-industry-bg: #351d1d;
+      --tag-industry-border: #6d3a3a;
+    }
+  }
+
+  /* 如果你的夜间切换按钮是通过 class / data-theme 控制，也可以兼容这些写法 */
+  html.dark,
+  body.dark,
+  body.dark-mode,
+  html[data-theme="dark"],
+  body[data-theme="dark"] {
+    --pub-text: #e6e6e6;
+    --pub-text-soft: #cfcfcf;
+    --pub-text-muted: #b5b5b5;
+    --pub-heading: #f3f3f3;
+    --pub-strong: #ffffff;
+    --pub-bold: #ffffff;
+
+    --pub-bg-soft: #1f2227;
+    --pub-bg-card: #181b20;
+    --pub-border: #31363f;
+    --pub-border-soft: #2a2f37;
+
+    --pub-accent: #7fc7ab;
+    --pub-link-blue: #7db7ff;
+
+    --tag-ccf-text: #9dc8ff;
+    --tag-ccf-bg: #1b2738;
+    --tag-ccf-border: #35506f;
+
+    --tag-acc-text: #9be28a;
+    --tag-acc-bg: #1c2b1d;
+    --tag-acc-border: #3f6b42;
+
+    --tag-award-text: #ffd27a;
+    --tag-award-bg: #302710;
+    --tag-award-border: #6d5a1f;
+
+    --tag-industry-text: #ff9b9b;
+    --tag-industry-bg: #351d1d;
+    --tag-industry-border: #6d3a3a;
+  }
+
+  .pub-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 100%;
+    color: var(--pub-text);
+  }
+
+  .pub-legend {
+    font-size: 13px;
+    color: var(--pub-text-muted);
+    margin-bottom: 25px;
+    padding: 12px 15px;
+    background: var(--pub-bg-soft);
+    border-left: 5px solid var(--pub-accent);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .year-header {
+    border-bottom: 2px solid var(--pub-accent);
+    font-size: 22px;
+    font-weight: bold;
+    margin: 45px 0 20px 0;
+    color: var(--pub-heading);
+  }
+
+  .pub-item {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    line-height: 1.5;
+  }
+
+  .pub-venue {
+    font-weight: 800;
+    min-width: 115px;
+    flex-shrink: 0;
+    color: var(--pub-strong);
+    font-size: 14.5px;
+    padding-top: 2px;
+  }
+
+  .pub-content {
+    flex-grow: 1;
+  }
+
+  .pub-title {
+    font-weight: 700;
+    color: var(--pub-strong);
+    text-decoration: none;
+    font-size: 16px;
+    display: inline;
+    transition: 0.2s;
+  }
+
+  .pub-title:hover {
+    color: var(--pub-accent);
+    border-bottom: 1px solid var(--pub-accent);
+  }
+
+  .pub-authors {
+    font-size: 14px;
+    color: var(--pub-text-soft);
+    margin-top: 5px;
+  }
+
+  .pub-authors b {
+    color: var(--pub-bold);
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--pub-text);
+  }
+
+  .pub-links {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .link-btn {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--pub-accent);
+    text-decoration: none;
+    padding: 2px 8px;
+    border: 1px solid var(--pub-accent);
+    border-radius: 4px;
+    transition: 0.2s;
+  }
+
+  .link-btn:hover {
+    background: var(--pub-accent);
+    color: #fff;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+
+  .tag-ccf {
+    color: var(--tag-ccf-text);
+    background: var(--tag-ccf-bg);
+    border: 1px solid var(--tag-ccf-border);
+  }
+
+  .tag-acc {
+    color: var(--tag-acc-text);
+    background: var(--tag-acc-bg);
+    border: 1px solid var(--tag-acc-border);
+  }
+
+  .tag-award {
+    color: var(--tag-award-text);
+    background: var(--tag-award-bg);
+    border: 1px solid var(--tag-award-border);
+  }
+
+  .tag-industry {
+    color: var(--tag-industry-text);
+    background: var(--tag-industry-bg);
+    border: 1px solid var(--tag-industry-border);
+  }
+
+  .tag-italic {
+    font-size: 11px;
+    color: var(--pub-text-muted);
+    font-style: italic;
+    margin-left: 4px;
+  }
+
   .stats-final-row {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     justify-content: space-around;
     align-items: center;
-    background: #fdfdfd;
-    border: 1px solid #efefef;
+    background: var(--pub-bg-card);
+    border: 1px solid var(--pub-border);
     border-radius: 6px;
     padding: 12px 0;
     margin: 20px 0 35px 0;
     width: 100%;
   }
+
   .stat-unit {
     flex: 1;
     text-align: center;
-    border-right: 1px solid #eee;
+    border-right: 1px solid var(--pub-border-soft);
     padding: 0 2px;
     min-width: 0;
   }
+
   .stat-unit:last-child {
     border-right: none;
   }
+
   .stat-num {
     font-size: 20px;
     font-weight: 850;
-    color: #538F79;
+    color: var(--pub-accent);
     display: block;
     line-height: 1.1;
   }
+
   .stat-text {
     font-size: 12.5px;
     font-weight: 700;
-    color: #333;
+    color: var(--pub-text);
     white-space: nowrap;
   }
+
   .stat-sub {
     font-size: 10px;
-    color: #aaa;
+    color: var(--pub-text-muted);
     display: block;
     margin-top: 2px;
     transform: scale(0.9);
     white-space: nowrap;
   }
+
   @media (max-width: 768px) {
+    .pub-item { flex-direction: column; }
+    .pub-venue {
+      margin-bottom: 6px;
+      font-size: 13px;
+      background: var(--pub-bg-soft);
+      padding: 1px 8px;
+      border-radius: 4px;
+      min-width: auto;
+    }
+    .pub-title { font-size: 15px; }
+    .pub-authors { font-size: 13px; }
+    .pub-links { gap: 5px; }
+    .link-btn { padding: 1px 6px; font-size: 11px; }
     .stat-num { font-size: 16px; }
     .stat-text { font-size: 10px; }
-    .stat-sub { 
-      font-size: 8px; 
+    .stat-sub {
+      font-size: 8px;
       transform: scale(0.85);
       margin-top: 0px;
     }
